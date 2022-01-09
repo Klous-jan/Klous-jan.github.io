@@ -7,34 +7,45 @@
     border-radius: 15px;
 }
 
+
 /* 100% rainbow */
-#moving-glow:before, .moving-glow:after {
+
+#moving-glow:hover::before,
+.moving-glow:hover::after {
     content: '';
     position: absolute;
     left: -2px;
     top: -2px;
-    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-          #0000ff, #00ff00,#ffff00, #ff0000);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
     background-size: 400%;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     z-index: -1;
     animation: anim-moving-glow 20s linear infinite;
- 
-}
-
-@keyframes anim-moving-glow {
-    0% {
-          background-position: 0 0;
-    }
-    50% {
-          background-position: 400% 0;
-    }
-    100% {
-          background-position: 0 0;
-    }
 }
 
 .moving-glow:after {
     filter: blur(9px);
+}
+
+
+/***** RAINBOW GLOW "z-index: 1 added" *****/
+
+* {
+    /* The asterisk is a universal selector that applies this effect to all elements on the page */
+    box-sizing: border-box;
+    /* This creates a box with a border within which we will place most of our text */
+    z-index: 0;
+}
+
+@keyframes anim-moving-glow {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
