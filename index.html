@@ -58,27 +58,28 @@
         <div id="Slideshow_Background">
             <div id="Slideshow_Container">
                 <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./img/Portfolio-2.0/Picture of me.jpg" alt="Picture of yourself">
+                    <img class="Slideshow_Images" src="./img/Portfolio-2.0/Picture of me.png" alt="Picture of yourself">
+                    <div class="text">My name is Nickolaus ive always had a passion for <br> tenchnology and web design</div>
                 </div>
                 <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./img/Portfolio-2.0/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
-                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    <img class="Slideshow_Images" src="./img/Portfolio-2.0/Notflix.png" alt="HTML, CSS, and JS logos">
+                    <div class="text">full-stack software developer trained in:<br>frontend web design and backend maintenance<br>Image: my Netflix clone project</div>
                 </div>
                 <div class="mySlides fade">
                     <img class="Slideshow_Images" src="./img/Portfolio-2.0/Python.png" alt="Python logo">
-                    <div class="text">the popular programming language Python,</div>
+                    <div class="text">Skilled with multiple languages and libraries including: <br>Python, C#, React, Kotlin and more</div>
                 </div>
-                <div class="mySlides fade">
+                <!-- <div class="mySlides fade">
                     <img class="Slideshow_Images" src="./img/Portfolio-2.0/C_Sharp_and_Dot_NET.png" alt="C# logo">
                     <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
-                </div>
+                </div> -->
                 <div class="mySlides fade">
                     <img class="Slideshow_Images" src="./img/Portfolio-2.0/SQL_and_Database.jpg" alt="SQL logo">
-                    <div class="text">back end development, databases and SQL.</div>
+                    <div class="text">I enjoy backend development problem solving <br> and skilled in writing and maintaining SQL database projects</div>
                 </div>
                 <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./img/Portfolio-2.0/Mochi3.jpg" alt="Replace with a picture of your choosing">
-                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    <img class="Slideshow_Images" src="./img/Portfolio-2.0/mes.png" alt="Replace with a picture of your choosing">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact us now!</a></div>
                 </div>
                 <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="Next" onclick="plusSlides(1)">&#10095;</a>
@@ -91,7 +92,6 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
                 <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </div>
     </div>
@@ -106,12 +106,10 @@
         <div class="Column_1">
             <h2>About</h2>
             <p>
-                My name is Nickolous Janak and im a software developer with a love for coding, Traveling, and cold trips to the park with my English Bulldog Mochi.
+                My name is Nickolous, im a software developer with a love for coding, Traveling, and cold trips to the park with my English Bulldog Mochi.
                 <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript,
-                SQL, C# and more.
-                <br>
-                <br>I am a full-stack developer and always looking for a new project to sink my teeth into. <a onclick="openForm()" class="contact">Contact</a> me below!
+                <br>I graduated from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> a Software Developer Boot Camp located in Portland Oregon where I was and taught the fundementals of web design and programming.
+                    Over the last two years I have contunued my education by practicing my skillsets and learning new skills and techniques along the way.
             </p>
         </div>
     </div>
@@ -137,9 +135,6 @@
             <div class="Column_2" id="Resume">
                 <div class="block moving-glow resumecontainer" style="height: 340px; width: 650;">
                     <a href="./Resume.html" target="_blank"><img class="ResumeIcon" src="./img/Portfolio-2.0/ResumeIcon.png" height="350" width="350" alt="Linkedin Icon"></a>
-                    <div class="resumeHover">
-                        <p>Resume</p>
-                    </div>
                 </div>
             </div>
             <!--Right column row 2 -->
@@ -153,17 +148,17 @@
             <div id="Contact">
                 <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
                 <div class="form-popup" id="myForm">
-                    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <form action="https://formspree.io/f/mqkvevbw" method="POST" class="form-container">
                         <h1>Contact</h1>
                         <label for="name"><b>Name</b></label>
-                        <input type="text" placeholder="Type your name here" name="name" required>
+                        <input type="text" placeholder="John Doe" name="name" required>
                         <label for="phone"><b>Phone</b></label>
-                        <input type="text" placeholder="Type your phone number here" name="phone">
+                        <input type="text" placeholder="(123) 456-7890" name="phone">
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Type your email address here" name="email" required>
+                        <input type="text" placeholder="john.doe@email.com" name="email" required>
                         <label for="message"><b>Message</b></label>
-                        <input type="text" placeholder="Type your message here" name="message">
-                        <button type="submit" class="btn">SUBMIT</button>
+                        <input type="text" class="message" placeholder="Hey, I was thinking..." name="message">
+                        <button type="submit" class="btn">SEND</button>
                         <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                     </form>
                 </div>
@@ -176,6 +171,7 @@
                     <br>
                 </p>
             </footer>
+            <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 </body>
 
 </html>

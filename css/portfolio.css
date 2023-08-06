@@ -1,8 +1,0 @@
-/***** RAINBOW GLOW "z-index: 1 added" *****/
-
-* {
-    /* The asterisk is a universal selector that applies this effect to all elements on the page */
-    box-sizing: border-box;
-    /* This creates a box with a border within which we will place most of our text */
-    z-index: 0;
-}
